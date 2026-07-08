@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -107,6 +108,59 @@
 
 .zoom-effect:hover {
   transform: scale(1.1);
+}
+
+
+/*======================================
+//--//-->   CONTACT FORM - CONSISTENT ACROSS DEVICES
+======================================*/
+
+/* Wrapper that centers the form and gives it a fixed, predictable
+   max-width so it renders the same proportions on phone, tablet
+   and desktop instead of stretching edge-to-edge on small screens */
+.contact-form-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-inner {
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.contact-form-inner form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem !important;
+}
+
+.contact-form-inner .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  height: calc(2.5em + .75rem + 2px);
+}
+
+.contact-form-inner textarea.form-control {
+  height: auto;
+}
+
+.contact-form-inner .btn {
+  width: 100%;
+  max-width: 260px;
+}
+
+/* Keep spacing/typography identical instead of Bootstrap's
+   default breakpoint jumps causing a different-looking form */
+@media (max-width: 767px) {
+  .contact-form-inner {
+    padding: 0 10px;
+  }
+  .contact-form-inner form {
+    padding: 1.5rem !important;
+  }
 }
 
 
@@ -638,10 +692,19 @@
 
     </div>
 </div>
-        
-     <div class="row justify-content-center">
 
-            <div class="col-md-7">
+        </div>
+        <!-- Contact form: moved to its own top-level row + wrapper so it
+             is no longer a "row" nested directly inside another "row"
+             (that nesting broke Bootstrap's grid and made the form
+             render inconsistently between mobile and desktop). The
+             .contact-form-wrap / .contact-form-inner classes above
+             now give it a fixed max-width and consistent padding on
+             every screen size. -->
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="contact-form-wrap">
+              <div class="contact-form-inner">
 
                 <h2 class="mb-4 text-center">
                     Have a <span>Question?</span>
@@ -692,8 +755,9 @@
 
                 </form>
 
+              </div>
             </div>
-
+          </div>
         </div>
 
     </div>
