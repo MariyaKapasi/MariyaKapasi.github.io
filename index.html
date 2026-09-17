@@ -1,33 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mariya Kapasi | MBA HR | Business Development Executive</title>
+    <title>Mariya Kapasi | MBA HR & Finance | Business Development</title>
 
     <meta name="description"
-        content="Mariya Kapasi - MBA HR student and Business Development Executive with experience in client communication, relationship management, HR, AI, PHP development and teaching.">
+          content="Mariya Kapasi - MBA HR & Finance student, Business Development Executive, BCA graduate, and developing professional with skills in HR, finance, accounting, economics, analytics, business development and technology.">
 
     <meta name="keywords"
-        content="Mariya Kapasi, MBA HR, Human Resources, Business Development Executive, HR Intern, HR Fresher, BCA, Bhavnagar">
+          content="Mariya Kapasi, MBA HR Finance, Business Development Executive, HR, Finance, Accounting, Economics, Business Analytics, BCA, Web Development">
 
     <meta name="author" content="Mariya Kapasi">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <style>
@@ -36,57 +38,78 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
             scroll-behavior: smooth;
         }
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: #f8f9fc;
-            color: #222;
+            background: #f7f9fc;
+            color: #333;
         }
 
-        /* NAVBAR */
+        /* ================= NAVBAR ================= */
 
         .navbar {
-            background: rgba(10, 15, 30, 0.96);
+            background: rgba(4, 10, 18, 0.97);
             padding: 15px 0;
         }
 
         .navbar-brand {
+            color: white !important;
+            font-size: 25px;
             font-weight: 700;
-            color: #fff !important;
-            font-size: 23px;
         }
 
         .navbar-brand span {
-            color: #00c6ff;
+            color: #00bfff;
         }
 
         .nav-link {
-            color: #fff !important;
-            margin-left: 18px;
-            font-size: 14px;
+            color: #ddd !important;
+            margin-left: 15px;
+            font-weight: 500;
         }
 
         .nav-link:hover {
             color: #00c6ff !important;
         }
 
-        /* HERO */
+        /* ================= HERO ================= */
 
         #home {
             min-height: 100vh;
             display: flex;
             align-items: center;
             background:
-                linear-gradient(135deg, #07111f, #102a43, #0b1728);
+                linear-gradient(
+                    rgba(4, 10, 18, 0.90),
+                    rgba(4, 10, 18, 0.90)
+                ),
+                url('images/cover.png');
+
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding-top: 80px;
+            padding-top: 90px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero-content p:first-child {
+            color: #00c6ff;
+            font-weight: 600;
+            font-size: 20px;
         }
 
         .hero-content h1 {
-            font-size: 52px;
-            font-weight: 700;
+            font-size: 65px;
+            font-weight: 800;
+            margin-bottom: 15px;
         }
 
         .hero-content h1 span {
@@ -95,51 +118,54 @@
 
         .hero-content h3 {
             font-size: 25px;
-            margin: 20px 0;
-            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
-        .hero-content p {
-            max-width: 650px;
-            line-height: 1.8;
-            color: #d7e1ec;
+        .hero-content .description {
+            color: #d5dce5;
+            font-size: 17px;
+            line-height: 1.9;
+            max-width: 800px;
         }
 
         .btn-main {
-            background: #00c6ff;
-            border: none;
-            color: #07111f;
-            padding: 12px 25px;
-            border-radius: 30px;
-            font-weight: 600;
-            margin-top: 20px;
-            text-decoration: none;
             display: inline-block;
+            background: #00a8df;
+            color: white;
+            padding: 13px 27px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 15px;
+            margin-right: 10px;
+            font-weight: 600;
+            transition: 0.3s;
         }
 
         .btn-main:hover {
-            background: white;
-            color: #07111f;
+            background: #0089b9;
+            color: white;
+            transform: translateY(-2px);
         }
 
         .btn-outline {
-            border: 1px solid #00c6ff;
-            color: #00c6ff;
-            padding: 11px 25px;
-            border-radius: 30px;
-            font-weight: 600;
-            margin-top: 20px;
-            margin-left: 10px;
-            text-decoration: none;
             display: inline-block;
+            border: 2px solid #00a8df;
+            color: white;
+            padding: 11px 27px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: 600;
+            transition: 0.3s;
         }
 
         .btn-outline:hover {
-            background: #00c6ff;
-            color: #07111f;
+            background: #00a8df;
+            color: white;
         }
 
-        /* SECTIONS */
+        /* ================= COMMON ================= */
 
         section {
             padding: 90px 0;
@@ -151,11 +177,11 @@
         }
 
         .section-title h2 {
+            font-size: 36px;
             font-weight: 700;
-            font-size: 35px;
         }
 
-        .section-title span {
+        .section-title h2 span {
             color: #00a8df;
         }
 
@@ -164,33 +190,38 @@
             margin-top: 10px;
         }
 
-        /* ABOUT */
+        /* ================= ABOUT ================= */
 
         .about-box {
             background: white;
-            padding: 35px;
-            border-radius: 15px;
+            padding: 40px;
+            border-radius: 18px;
             box-shadow: 0 8px 30px rgba(0,0,0,0.07);
         }
 
         .about-box p {
             line-height: 1.9;
             color: #555;
+            margin-bottom: 18px;
         }
 
         .info-item {
             margin-bottom: 15px;
+            line-height: 1.7;
         }
 
         .info-item strong {
             color: #111;
         }
 
-        /* EXPERIENCE */
+        /* ================= EXPERIENCE ================= */
+
+        #experience {
+            background: #f1f5f9;
+        }
 
         .timeline {
-            position: relative;
-            max-width: 900px;
+            max-width: 950px;
             margin: auto;
         }
 
@@ -199,48 +230,41 @@
             padding: 30px;
             margin-bottom: 25px;
             border-left: 5px solid #00a8df;
-            border-radius: 10px;
+            border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.06);
         }
 
         .timeline-item h4 {
             font-weight: 600;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
-        .timeline-item .company {
+        .company {
             color: #00a8df;
-            font-weight: 500;
+            font-weight: 600;
         }
 
-        .timeline-item .date {
+        .date {
             color: #777;
             font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        .timeline-item ul {
-            margin-bottom: 0;
+            margin: 8px 0 18px;
         }
 
         .timeline-item li {
-            margin-bottom: 8px;
+            margin-bottom: 9px;
             color: #555;
+            line-height: 1.7;
         }
 
-        /* EDUCATION */
+        /* ================= EDUCATION ================= */
 
         .education-card {
             background: white;
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 16px;
             height: 100%;
             box-shadow: 0 5px 20px rgba(0,0,0,0.06);
             border-top: 4px solid #00a8df;
-        }
-
-        .education-card h4 {
-            font-weight: 600;
         }
 
         .education-card .year {
@@ -248,54 +272,127 @@
             font-weight: 600;
         }
 
-        /* SKILLS */
+        .education-card h4 {
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .education-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* ================= SKILLS ================= */
+
+        #skills {
+            background: #f1f5f9;
+        }
 
         .skill-box {
             background: white;
-            padding: 25px;
-            border-radius: 15px;
+            padding: 30px;
+            border-radius: 16px;
             height: 100%;
             box-shadow: 0 5px 20px rgba(0,0,0,0.06);
         }
 
         .skill-box h4 {
             margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .skill-box h4 i {
+            color: #00a8df;
+            margin-right: 8px;
         }
 
         .skill-tag {
             display: inline-block;
             padding: 9px 15px;
             margin: 5px;
-            border-radius: 20px;
+            border-radius: 25px;
             background: #eef8fc;
             color: #0088b7;
             font-size: 14px;
+            font-weight: 500;
         }
 
-        /* CERTIFICATIONS */
+        /* ================= PROJECTS ================= */
+
+        .project-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h4 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .project-content h4 a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .project-content h4 a:hover {
+            color: #00a8df;
+        }
+
+        .project-content p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* ================= CERTIFICATIONS ================= */
 
         .cert-card {
             background: white;
-            padding: 25px;
-            border-radius: 15px;
+            padding: 30px;
+            border-radius: 16px;
             height: 100%;
             box-shadow: 0 5px 20px rgba(0,0,0,0.06);
             text-align: center;
         }
 
         .cert-card i {
-            font-size: 35px;
+            font-size: 38px;
             color: #00a8df;
             margin-bottom: 15px;
         }
 
-        /* ACTIVITIES */
+        .cert-card h5 {
+            font-weight: 600;
+        }
+
+        .cert-card p {
+            color: #777;
+        }
+
+        /* ================= ACTIVITIES ================= */
 
         .activity-box {
             background: #07111f;
             color: white;
-            padding: 35px;
-            border-radius: 15px;
+            padding: 40px;
+            border-radius: 18px;
         }
 
         .activity-box p {
@@ -303,7 +400,7 @@
             line-height: 1.8;
         }
 
-        /* CONTACT */
+        /* ================= CONTACT ================= */
 
         #contact {
             background: #07111f;
@@ -321,7 +418,7 @@
         .contact-card {
             background: #102033;
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 16px;
             text-align: center;
             height: 100%;
         }
@@ -329,6 +426,10 @@
         .contact-card i {
             font-size: 30px;
             color: #00c6ff;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h5 {
             margin-bottom: 15px;
         }
 
@@ -342,19 +443,18 @@
             color: #00c6ff;
         }
 
-        /* FOOTER */
+        /* ================= FOOTER ================= */
 
         footer {
             background: #040a12;
             color: #aaa;
             text-align: center;
-            padding: 20px;
-            font-size: 14px;
+            padding: 22px;
         }
 
         .social-icons a {
             color: white;
-            font-size: 20px;
+            font-size: 21px;
             margin: 0 8px;
         }
 
@@ -362,24 +462,28 @@
             color: #00c6ff;
         }
 
-        /* RESPONSIVE */
+        /* ================= RESPONSIVE ================= */
 
         @media (max-width: 768px) {
 
             .hero-content h1 {
-                font-size: 38px;
+                font-size: 43px;
             }
 
             .hero-content h3 {
                 font-size: 20px;
             }
 
-            .btn-outline {
-                margin-left: 0;
+            .hero-content .description {
+                font-size: 15px;
             }
 
             section {
                 padding: 65px 0;
+            }
+
+            .about-box {
+                padding: 25px;
             }
 
         }
@@ -388,7 +492,9 @@
 
 </head>
 
+
 <body>
+
 
 <!-- ================= NAVBAR ================= -->
 
@@ -400,10 +506,11 @@
             Mariya<span>.</span>
         </a>
 
-        <button class="navbar-toggler bg-light"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+        <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
 
             <span class="navbar-toggler-icon"></span>
 
@@ -434,7 +541,13 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#certifications">Certifications</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">
+                        Certifications
+                    </a>
                 </li>
 
                 <li class="nav-item">
@@ -458,30 +571,35 @@
 
         <div class="hero-content">
 
-            <p class="mb-2">Hello, I'm</p>
+            <p>Hello, I'm</p>
 
-            <h1>Mariya <span>Kapasi</span></h1>
+            <h1>
+                Mariya <span>Kapasi</span>
+            </h1>
 
             <h3>
-                MBA (HR) Student &nbsp;|&nbsp;
+                MBA HR & Finance Student
+                <br>
                 Business Development Executive
             </h3>
 
-            <p>
-                HR professional in the making, currently pursuing an MBA in
-                Human Resources and working in Business Development.
-                I bring experience in client communication, relationship
-                management, teaching, event coordination, AI, and software
-                development.
+            <p class="description">
+
+                BCA graduate currently pursuing an MBA in Human Resources
+                and Finance. I am developing a strong blend of business,
+                people-management, accounting, finance, economics,
+                analytical, communication and technology skills.
+
             </p>
 
             <a href="#about" class="btn-main">
                 Explore My Profile
             </a>
 
-            <a href="images/Mariya_resume.pdf"
-               target="_blank"
-               class="btn-outline">
+            <a
+                href="images/Mariya Kapasi resume.pdf"
+                target="_blank"
+                class="btn-outline">
 
                 <i class="fa-solid fa-file-pdf"></i>
                 View Resume
@@ -503,11 +621,16 @@
 
         <div class="section-title">
 
-            <h2>About <span>Me</span></h2>
+            <h2>
+                About <span>Me</span>
+            </h2>
 
-            <p>My professional journey and career focus</p>
+            <p>
+                My professional journey and developing career profile
+            </p>
 
         </div>
+
 
         <div class="row justify-content-center">
 
@@ -516,33 +639,57 @@
                 <div class="about-box">
 
                     <p>
-                        I am currently pursuing an MBA in Human Resources at
-                        Swami Shahjanand School of Management, affiliated with
-                        Gujarat Technological University (GTU), after completing
-                        my Bachelor of Computer Application in May 2026.
+
+                        I am a BCA graduate currently pursuing a Master of
+                        Business Administration with a focus on Human Resources
+                        and Finance. My academic journey combines technology
+                        with business and management, allowing me to approach
+                        problems from both technical and business perspectives.
+
                     </p>
 
                     <p>
-                        I currently work as a Business Development Executive,
-                        where I manage client communication, lead follow-ups,
-                        relationship-building, and coordination with internal
-                        teams.
+
+                        I currently work as a
+                        <strong>Business Development Executive at
+                        RemoteDevs Infotech</strong>, where I am developing
+                        practical experience in professional communication,
+                        client interaction, relationship management,
+                        business development and coordination.
+
                     </p>
 
                     <p>
-                        My professional journey also includes experience in
-                        AI, PHP development, teaching, event coordination, and
-                        technical internships. These experiences have helped me
-                        develop strong communication, leadership, teamwork,
-                        organization, and people-management skills.
+
+                        Alongside my MBA, I am continuously developing my
+                        knowledge of <strong>Human Resources, accounting,
+                        finance, economics, business analytics and
+                        management</strong>. I am particularly interested in
+                        understanding how financial and analytical insights
+                        can support better business and management decisions.
+
                     </p>
 
                     <p>
-                        I am particularly interested in building my career in
-                        Human Resources, especially in recruitment, employee
-                        engagement, HR operations, communication, and
-                        relationship management.
+
+                        My BCA background has also given me a foundation in
+                        programming, databases, web development and
+                        technology. I continue to strengthen these technical
+                        skills while building my professional capabilities in
+                        business and management.
+
                     </p>
+
+                    <p>
+
+                        I believe continuous learning is essential for
+                        professional growth. My goal is to build a career
+                        where I can combine people skills, business knowledge,
+                        analytical thinking and technology to contribute
+                        effectively to an organization.
+
+                    </p>
+
 
                     <div class="row mt-4">
 
@@ -554,17 +701,28 @@
                             </div>
 
                             <div class="info-item">
-                                <strong>Career Focus:</strong>
-                                Human Resources
+                                <strong>Organization:</strong>
+                                RemoteDevs Infotech
+                            </div>
+
+                            <div class="info-item">
+                                <strong>Career Development:</strong>
+                                HR, Finance & Business
                             </div>
 
                         </div>
+
 
                         <div class="col-md-6">
 
                             <div class="info-item">
                                 <strong>Education:</strong>
-                                MBA (HR) + BCA
+                                MBA HR & Finance + BCA
+                            </div>
+
+                            <div class="info-item">
+                                <strong>Developing Skills:</strong>
+                                Accounting, Finance, Economics & Analytics
                             </div>
 
                             <div class="info-item">
@@ -589,17 +747,22 @@
 
 <!-- ================= EXPERIENCE ================= -->
 
-<section id="experience" class="bg-light">
+<section id="experience">
 
     <div class="container">
 
         <div class="section-title">
 
-            <h2>Professional <span>Experience</span></h2>
+            <h2>
+                Professional <span>Experience</span>
+            </h2>
 
-            <p>My professional and internship experience</p>
+            <p>
+                Professional experience and practical learning
+            </p>
 
         </div>
+
 
         <div class="timeline">
 
@@ -608,32 +771,39 @@
 
             <div class="timeline-item">
 
-                <h4>Business Development Executive</h4>
+                <h4>
+                    Business Development Executive
+                </h4>
 
                 <div class="company">
-                    Current Organization
+                    RemoteDevs Infotech
                 </div>
 
                 <div class="date">
-                    Jul 2026 – Present | Bhavnagar, Gujarat | On-site, Full-time
+                    Jul 2026 – Present | on-site 
                 </div>
 
                 <ul>
 
                     <li>
-                        Manage client communication, lead follow-ups, and
-                        relationship-building to support business growth.
+                        Developing professional experience in business
+                        development, client communication and relationship
+                        management.
                     </li>
 
                     <li>
-                        Coordinate with internal teams to align client
-                        requirements with delivery timelines.
+                        Supporting lead follow-ups, client interactions and
+                        business communication.
                     </li>
 
                     <li>
-                        Strengthened negotiation, interpersonal, and
-                        professional communication skills through daily
-                        client interaction.
+                        Developing negotiation, presentation, interpersonal
+                        and professional communication skills.
+                    </li>
+
+                    <li>
+                        Building practical understanding of business
+                        processes and organizational operations.
                     </li>
 
                 </ul>
@@ -641,11 +811,13 @@
             </div>
 
 
-            <!-- AI -->
+            <!-- AI INTERNSHIP -->
 
             <div class="timeline-item">
 
-                <h4>AI Intern</h4>
+                <h4>
+                    AI Intern
+                </h4>
 
                 <div class="company">
                     Brinicle AI
@@ -658,13 +830,13 @@
                 <ul>
 
                     <li>
-                        Completed an online internship exploring applied AI
+                        Gained practical exposure to Artificial Intelligence
                         concepts and tools.
                     </li>
 
                     <li>
-                        Built foundational understanding of AI-driven
-                        workflows and problem-solving approaches.
+                        Developed foundational understanding of
+                        AI-oriented workflows and problem-solving.
                     </li>
 
                 </ul>
@@ -672,30 +844,37 @@
             </div>
 
 
-            <!-- PHP -->
+            <!-- PHP INTERNSHIP -->
 
             <div class="timeline-item">
 
-                <h4>PHP Development Intern</h4>
+                <h4>
+                    PHP Development Intern
+                </h4>
 
                 <div class="company">
                     Sparrow Softtech
                 </div>
 
                 <div class="date">
-                    Jan 2026 – Feb 2026 | Bhavnagar | On-site
+                    Jan 2026 – Feb 2026 | Bhavnagar
                 </div>
 
                 <ul>
 
                     <li>
-                        Developed a User Management System with user
-                        authentication and profile management.
+                        Developed a User Management System using PHP,
+                        MySQL, HTML, CSS and Bootstrap.
                     </li>
 
                     <li>
-                        Worked with PHP, SQL, and XAMPP during the development
-                        process.
+                        Implemented authentication, sessions, profile
+                        management and database operations.
+                    </li>
+
+                    <li>
+                        Worked with PDO, prepared statements, validation
+                        and secure database practices.
                     </li>
 
                 </ul>
@@ -703,72 +882,47 @@
             </div>
 
 
-            <!-- OTHER INTERNSHIPS -->
+            <!-- ONLINE INTERNSHIPS -->
 
             <div class="timeline-item">
 
-                <h4>Other Internships</h4>
+                <h4>
+                    Online Programming & Web Development Internships
+                </h4>
 
                 <div class="company">
-                    Remote
+                    Intern Alpha | CodeAlpha | Coding Samurai | Sysslan IT
                 </div>
 
                 <div class="date">
-                    May 2026 – Jun 2026
+                    2026 | Online
                 </div>
 
                 <ul>
 
                     <li>
-                        <strong>Python Programming Intern – Intern Alpha:</strong>
-                        Mini projects using functions, loops, and OOP concepts.
+                        <strong>Python – Intern Alpha:</strong>
+                        Developed programming and problem-solving skills
+                        through Python-based assignments.
                     </li>
 
                     <li>
-                        <strong>C Programming Intern – Code Alpha:</strong>
-                        Algorithm-based projects and debugging exercises.
+                        <strong>C Programming – CodeAlpha:</strong>
+                        Worked on programming tasks including a calculator,
+                        matrix operations and a student management system.
                     </li>
 
                     <li>
-                        <strong>Web Development Intern – Coding Samurai
-                        (Sysslan IT):</strong>
-                        Responsive web pages using HTML, CSS, and JavaScript.
+                        <strong>Web Development – Coding Samurai /
+                        Sysslan IT:</strong>
+                        Developed practical understanding of responsive
+                        web development using HTML, CSS and JavaScript.
                     </li>
 
                 </ul>
 
             </div>
 
-
-            <!-- TEACHING -->
-
-            <div class="timeline-item">
-
-                <h4>English Teacher – Grades 5–8</h4>
-
-                <div class="company">
-                    Mahdi English School
-                </div>
-
-                <div class="date">
-                    Nov 2023 – Jun 2026
-                </div>
-
-                <ul>
-
-                    <li>
-                        Developed strong communication, leadership, classroom
-                        management, and presentation skills.
-                    </li>
-
-                    <li>
-                        Regularly engaged with students and parents, building
-                        patience, empathy, and people-management ability.
-                    </li>
-
-                </ul>
-
-            </div>
 
         </div>
 
@@ -785,13 +939,21 @@
 
         <div class="section-title">
 
-            <h2>My <span>Education</span></h2>
+            <h2>
+                My <span>Education</span>
+            </h2>
 
-            <p>Academic background</p>
+            <p>
+                Academic background and current learning journey
+            </p>
 
         </div>
 
+
         <div class="row g-4">
+
+
+            <!-- MBA -->
 
             <div class="col-md-6">
 
@@ -801,26 +963,37 @@
                         2026 – Present
                     </div>
 
-                    <h4 class="mt-2">
+                    <h4>
                         Master of Business Administration
                     </h4>
 
                     <p class="mb-1">
-                        <strong>Human Resources</strong>
+                        <strong>
+                            Human Resources & Finance
+                        </strong>
                     </p>
 
                     <p>
-                        Swami Shahjanand School of Management (SSSM)
+                        Swami Shahjanand College of Commerce and Management
                     </p>
 
                     <p>
-                        Affiliated with Gujarat Technological University (GTU)
+                        Affiliated with Gujarat Technological University
+                        (GTU)
+                    </p>
+
+                    <p>
+                        Currently developing knowledge in HR management,
+                        accounting, finance, economics, business analytics,
+                        organizational behaviour and management.
                     </p>
 
                 </div>
 
             </div>
 
+
+            <!-- BCA -->
 
             <div class="col-md-6">
 
@@ -830,12 +1003,18 @@
                         Graduated May 2026
                     </div>
 
-                    <h4 class="mt-2">
+                    <h4>
                         Bachelor of Computer Application
                     </h4>
 
                     <p class="mb-1">
-                        <strong>CGPA: 8.16</strong>
+                        <strong>
+                            BCA
+                        </strong>
+                    </p>
+
+                    <p>
+                        Shree Swaminarayan College of Computer Science
                     </p>
 
                     <p>
@@ -843,7 +1022,9 @@
                     </p>
 
                     <p>
-                        Shree Swaminarayan College of Computer Science
+                        Built a foundation in programming, databases,
+                        web development, software development and
+                        problem-solving.
                     </p>
 
                 </div>
@@ -859,60 +1040,524 @@
 
 <!-- ================= SKILLS ================= -->
 
-<section id="skills" class="bg-light">
+<section id="skills">
 
     <div class="container">
 
         <div class="section-title">
 
-            <h2>My <span>Skills</span></h2>
+            <h2>
+                My <span>Developing Skills</span>
+            </h2>
 
-            <p>Professional, interpersonal and technical skills</p>
+            <p>
+                Skills I am building through my MBA, work and technical
+                background
+            </p>
 
         </div>
 
+
         <div class="row g-4">
 
-            <div class="col-md-6">
+
+            <!-- HR & MANAGEMENT -->
+
+            <div class="col-lg-4 col-md-6">
 
                 <div class="skill-box">
 
                     <h4>
-                        <i class="fa-solid fa-people-group"></i>
-                        HR & Interpersonal
+                        <i class="fa-solid fa-users"></i>
+                        HR & Management
                     </h4>
 
-                    <span class="skill-tag">Communication</span>
-                    <span class="skill-tag">Client Relationship Management</span>
-                    <span class="skill-tag">Team Coordination</span>
-                    <span class="skill-tag">Leadership</span>
-                    <span class="skill-tag">Event Management</span>
-                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">
+                        Human Resource Management
+                    </span>
+
+                    <span class="skill-tag">
+                        Recruitment Fundamentals
+                    </span>
+
+                    <span class="skill-tag">
+                        Employee Relations
+                    </span>
+
+                    <span class="skill-tag">
+                        Team Coordination
+                    </span>
+
+                    <span class="skill-tag">
+                        Leadership
+                    </span>
+
+                    <span class="skill-tag">
+                        Communication
+                    </span>
+
+                    <span class="skill-tag">
+                        Business Development
+                    </span>
+
+                    <span class="skill-tag">
+                        Client Relationship Management
+                    </span>
 
                 </div>
 
             </div>
 
 
-            <div class="col-md-6">
+            <!-- FINANCE & ACCOUNTING -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="skill-box">
+
+                    <h4>
+                        <i class="fa-solid fa-chart-line"></i>
+                        Finance & Accounting
+                    </h4>
+
+                    <span class="skill-tag">
+                        Accounting Fundamentals
+                    </span>
+
+                    <span class="skill-tag">
+                        Financial Management
+                    </span>
+
+                    <span class="skill-tag">
+                        Financial Analysis
+                    </span>
+
+                    <span class="skill-tag">
+                        Business Finance
+                    </span>
+
+                    <span class="skill-tag">
+                        Economics
+                    </span>
+
+                    <span class="skill-tag">
+                        Financial Decision-Making
+                    </span>
+
+                    <span class="skill-tag">
+                        Budgeting Fundamentals
+                    </span>
+
+                    <span class="skill-tag">
+                        Cost Analysis
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANALYTICAL -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="skill-box">
+
+                    <h4>
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        Analytical & Business
+                    </h4>
+
+                    <span class="skill-tag">
+                        Analytical Thinking
+                    </span>
+
+                    <span class="skill-tag">
+                        Problem Solving
+                    </span>
+
+                    <span class="skill-tag">
+                        Business Analysis
+                    </span>
+
+                    <span class="skill-tag">
+                        Decision Making
+                    </span>
+
+                    <span class="skill-tag">
+                        Critical Thinking
+                    </span>
+
+                    <span class="skill-tag">
+                        Research
+                    </span>
+
+                    <span class="skill-tag">
+                        Data Interpretation
+                    </span>
+
+                    <span class="skill-tag">
+                        Market Understanding
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- TECHNICAL -->
+
+            <div class="col-lg-6 col-md-6">
 
                 <div class="skill-box">
 
                     <h4>
                         <i class="fa-solid fa-laptop-code"></i>
-                        Tools & Technical
+                        Technical Skills
                     </h4>
 
-                    <span class="skill-tag">MS Office</span>
-                    <span class="skill-tag">Basic Python</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">
+                        C
+                    </span>
+
+                    <span class="skill-tag">
+                        C++
+                    </span>
+
+                    <span class="skill-tag">
+                        Java
+                    </span>
+
+                    <span class="skill-tag">
+                        Python
+                    </span>
+
+                    <span class="skill-tag">
+                        PHP
+                    </span>
+
+                    <span class="skill-tag">
+                        SQL
+                    </span>
+
+                    <span class="skill-tag">
+                        HTML
+                    </span>
+
+                    <span class="skill-tag">
+                        CSS
+                    </span>
+
+                    <span class="skill-tag">
+                        Bootstrap
+                    </span>
+
+                    <span class="skill-tag">
+                        Data Structures
+                    </span>
+
+                    <span class="skill-tag">
+                        Database Management
+                    </span>
+
+                    <span class="skill-tag">
+                        Git & GitHub
+                    </span>
 
                 </div>
 
             </div>
+
+
+            <!-- PROFESSIONAL -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <div class="skill-box">
+
+                    <h4>
+                        <i class="fa-solid fa-briefcase"></i>
+                        Professional Skills
+                    </h4>
+
+                    <span class="skill-tag">
+                        Effective Communication
+                    </span>
+
+                    <span class="skill-tag">
+                        Public Speaking
+                    </span>
+
+                    <span class="skill-tag">
+                        Presentation
+                    </span>
+
+                    <span class="skill-tag">
+                        Team Collaboration
+                    </span>
+
+                    <span class="skill-tag">
+                        Time Management
+                    </span>
+
+                    <span class="skill-tag">
+                        Leadership
+                    </span>
+
+                    <span class="skill-tag">
+                        Negotiation
+                    </span>
+
+                    <span class="skill-tag">
+                        Event Coordination
+                    </span>
+
+                    <span class="skill-tag">
+                        Adaptability
+                    </span>
+
+                    <span class="skill-tag">
+                        Continuous Learning
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                My <span>Projects</span>
+            </h2>
+
+            <p>
+                Selected academic and personal projects
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- USER MANAGEMENT -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+                    <a
+                        href="https://github.com/MariyaKapasi/User-Management-System"
+                        target="_blank">
+
+                        <img
+                            src="images/ums.png"
+                            alt="User Management System">
+
+                    </a>
+
+                    <div class="project-content">
+
+                        <h4>
+                            <a
+                                href="https://github.com/MariyaKapasi/User-Management-System"
+                                target="_blank">
+
+                                User Management System
+
+                            </a>
+                        </h4>
+
+                        <p>
+                            Developed a web-based User Management System
+                            using PHP, MySQL, HTML, CSS and Bootstrap with
+                            authentication, sessions, profile management,
+                            validation and database operations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HANGMAN -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+                    <a
+                        href="https://github.com/MariyaKapasi/Hangman-game"
+                        target="_blank">
+
+                        <img
+                            src="images/hangman.png"
+                            alt="Hangman Game">
+
+                    </a>
+
+                    <div class="project-content">
+
+                        <h4>
+                            <a
+                                href="https://github.com/MariyaKapasi/Hangman-game"
+                                target="_blank">
+
+                                Hangman Game
+
+                            </a>
+                        </h4>
+
+                        <p>
+                            Created a Python-based word guessing game
+                            demonstrating programming logic, functions,
+                            conditions and user interaction.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHATBOT -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+                    <a
+                        href="https://github.com/MariyaKapasi"
+                        target="_blank">
+
+                        <img
+                            src="images/chatbot.png"
+                            alt="AI Chatbot">
+
+                    </a>
+
+                    <div class="project-content">
+
+                        <h4>
+                            <a
+                                href="https://github.com/MariyaKapasi"
+                                target="_blank">
+
+                                AI Chatbot
+
+                            </a>
+                        </h4>
+
+                        <p>
+                            Developed a chatbot project exploring
+                            conversational interaction and basic AI concepts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BANKING SYSTEM -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <div class="project-card">
+
+                    <a
+                        href="https://github.com/MariyaKapasi/CodeAlpha_tasks/blob/main/banking_system.c"
+                        target="_blank">
+
+                        <img
+                            src="images/c.png"
+                            alt="Banking System">
+
+                    </a>
+
+                    <div class="project-content">
+
+                        <h4>
+                            <a
+                                href="https://github.com/MariyaKapasi/CodeAlpha_tasks/blob/main/banking_system.c"
+                                target="_blank">
+
+                                Banking System using C
+
+                            </a>
+                        </h4>
+
+                        <p>
+                            Built a C-based banking system demonstrating
+                            programming logic, account management,
+                            deposits, withdrawals and transaction handling.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STOCK PORTFOLIO -->
+
+            <div class="col-lg-6 col-md-6">
+
+                <div class="project-card">
+
+                    <a
+                        href="https://github.com/MariyaKapasi/Stock-portfolio"
+                        target="_blank">
+
+                        <img
+                            src="images/stock.png"
+                            alt="Stock Portfolio Management">
+
+                    </a>
+
+                    <div class="project-content">
+
+                        <h4>
+                            <a
+                                href="https://github.com/MariyaKapasi/Stock-portfolio"
+                                target="_blank">
+
+                                Stock Portfolio Management
+
+                            </a>
+                        </h4>
+
+                        <p>
+                            Developed a project focused on managing stock
+                            information and understanding investment and
+                            portfolio-related concepts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
 
         </div>
 
@@ -929,13 +1574,19 @@
 
         <div class="section-title">
 
-            <h2>My <span>Certifications</span></h2>
+            <h2>
+                My <span>Certifications</span>
+            </h2>
 
-            <p>Courses, certifications and professional learning</p>
+            <p>
+                Courses, certifications and professional learning
+            </p>
 
         </div>
 
+
         <div class="row g-4">
+
 
             <div class="col-md-4">
 
@@ -943,7 +1594,9 @@
 
                     <i class="fa-brands fa-python"></i>
 
-                    <h5>Python Programming</h5>
+                    <h5>
+                        Python Programming
+                    </h5>
 
                     <p>
                         Reliance Foundation
@@ -958,12 +1611,14 @@
 
                 <div class="cert-card">
 
-                    <i class="fa-solid fa-brain"></i>
+                    <i class="fa-solid fa-code"></i>
 
-                    <h5>Advanced AI Webinar</h5>
+                    <h5>
+                        Python Programming
+                    </h5>
 
                     <p>
-                        TOPS Technologies
+                        Beginner to Advanced
                     </p>
 
                 </div>
@@ -975,17 +1630,20 @@
 
                 <div class="cert-card">
 
-                    <i class="fa-solid fa-certificate"></i>
+                    <i class="fa-solid fa-brain"></i>
 
-                    <h5>AI Internship Certificate</h5>
+                    <h5>
+                        Advanced AI Webinar
+                    </h5>
 
                     <p>
-                        Brinicle AI
+                        TOPS Technologies
                     </p>
 
                 </div>
 
             </div>
+
 
         </div>
 
@@ -1002,11 +1660,16 @@
 
         <div class="section-title">
 
-            <h2>Activities & <span>Leadership</span></h2>
+            <h2>
+                Activities & <span>Leadership</span>
+            </h2>
 
-            <p>Beyond academics and professional experience</p>
+            <p>
+                Experiences beyond academics and professional work
+            </p>
 
         </div>
+
 
         <div class="activity-box">
 
@@ -1019,10 +1682,16 @@
             </p>
 
             <p>
-                Anchored college IT events and coordinated with teams during
-                technical and extracurricular activities. These experiences
-                helped strengthen my public speaking, teamwork, event
-                management, and leadership abilities.
+                Participated in college IT activities and anchored
+                college events. These experiences helped strengthen
+                public speaking, presentation, teamwork, coordination,
+                leadership and event-management skills.
+            </p>
+
+            <p>
+                I also enjoy continuous learning through technical
+                projects, professional development activities and
+                business-oriented learning as part of my MBA journey.
             </p>
 
         </div>
@@ -1040,17 +1709,22 @@
 
         <div class="section-title">
 
-            <h2>Let's <span>Connect</span></h2>
+            <h2>
+                Let's <span>Connect</span>
+            </h2>
 
             <p>
-                Interested in HR opportunities, internships and professional
-                collaboration.
+                Open to professional opportunities, learning and
+                meaningful collaborations.
             </p>
 
         </div>
 
+
         <div class="row g-4">
 
+
+            <!-- EMAIL -->
 
             <div class="col-md-4">
 
@@ -1058,10 +1732,15 @@
 
                     <i class="fa-solid fa-envelope"></i>
 
-                    <h5>Email</h5>
+                    <h5>
+                        Email
+                    </h5>
 
-                    <a href="mailto:mariyakapasi2606@gmail.com">
+                    <a
+                        href="mailto:mariyakapasi2606@gmail.com">
+
                         mariyakapasi2606@gmail.com
+
                     </a>
 
                 </div>
@@ -1069,16 +1748,21 @@
             </div>
 
 
+            <!-- LINKEDIN -->
+
             <div class="col-md-4">
 
                 <div class="contact-card">
 
                     <i class="fa-brands fa-linkedin"></i>
 
-                    <h5>LinkedIn</h5>
+                    <h5>
+                        LinkedIn
+                    </h5>
 
-                    <a href="https://linkedin.com/in/mariya-kapasi"
-                       target="_blank">
+                    <a
+                        href="https://linkedin.com/in/mariya-kapasi"
+                        target="_blank">
 
                         linkedin.com/in/mariya-kapasi
 
@@ -1089,16 +1773,21 @@
             </div>
 
 
+            <!-- GITHUB -->
+
             <div class="col-md-4">
 
                 <div class="contact-card">
 
                     <i class="fa-brands fa-github"></i>
 
-                    <h5>GitHub</h5>
+                    <h5>
+                        GitHub
+                    </h5>
 
-                    <a href="https://github.com/MariyaKapasi"
-                       target="_blank">
+                    <a
+                        href="https://github.com/MariyaKapasi"
+                        target="_blank">
 
                         github.com/MariyaKapasi
 
@@ -1108,16 +1797,18 @@
 
             </div>
 
+
         </div>
 
 
         <div class="text-center mt-5">
 
-            <a href="images/Mariya_resume.pdf"
-               target="_blank"
-               class="btn-main">
+            <a
+                href="images/Mariya Kapasi resume.pdf"
+                target="_blank"
+                class="btn-main">
 
-                <i class="fa-solid fa-download"></i>
+                <i class="fa-solid fa-file-pdf"></i>
                 View My Resume
 
             </a>
@@ -1133,23 +1824,26 @@
 
 <footer>
 
-    <div class="social-icons mb-2">
+    <div class="social-icons mb-3">
 
-        <a href="https://linkedin.com/in/mariya-kapasi"
-           target="_blank">
+        <a
+            href="https://linkedin.com/in/mariya-kapasi"
+            target="_blank">
 
             <i class="fa-brands fa-linkedin"></i>
 
         </a>
 
-        <a href="https://github.com/MariyaKapasi"
-           target="_blank">
+        <a
+            href="https://github.com/MariyaKapasi"
+            target="_blank">
 
             <i class="fa-brands fa-github"></i>
 
         </a>
 
-        <a href="mailto:mariyakapasi2606@gmail.com">
+        <a
+            href="mailto:mariyakapasi2606@gmail.com">
 
             <i class="fa-solid fa-envelope"></i>
 
@@ -1166,8 +1860,10 @@
 
 <!-- Bootstrap JS -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
+
 
 </body>
 
